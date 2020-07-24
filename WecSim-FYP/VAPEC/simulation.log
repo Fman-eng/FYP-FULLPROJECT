@@ -1,10 +1,9 @@
-wecSimMCR Case 29
 
 WEC-Sim Read Input File ...   
-Elapsed time is 0.044131 seconds.
+Elapsed time is 0.707550 seconds.
 
 WEC-Sim Pre-processing ...   
-Elapsed time is 0.357142 seconds.
+Elapsed time is 3.012125 seconds.
 
 WEC-Sim Simulation Settings:
 	Start Time                     (sec) = 0
@@ -29,6 +28,34 @@ List of PTO(s): Number of PTOs = 1
 
 	***** PTO Name: PTO1 *****
 	PTO Stiffness           (N/m;Nm/rad) = 0
+	PTO Damping           (Ns/m;Nsm/rad) = 1000
+	PTO Damping           (Ns/m;Nsm/rad) = 1250
+	PTO Damping           (Ns/m;Nsm/rad) = 1500
+	PTO Damping           (Ns/m;Nsm/rad) = 1750
+	PTO Damping           (Ns/m;Nsm/rad) = 2000
+	PTO Damping           (Ns/m;Nsm/rad) = 2250
+	PTO Damping           (Ns/m;Nsm/rad) = 2500
+	PTO Damping           (Ns/m;Nsm/rad) = 2750
+	PTO Damping           (Ns/m;Nsm/rad) = 3000
+	PTO Damping           (Ns/m;Nsm/rad) = 3250
+	PTO Damping           (Ns/m;Nsm/rad) = 3500
+	PTO Damping           (Ns/m;Nsm/rad) = 3750
+	PTO Damping           (Ns/m;Nsm/rad) = 4000
+	PTO Damping           (Ns/m;Nsm/rad) = 4250
+	PTO Damping           (Ns/m;Nsm/rad) = 4500
+	PTO Damping           (Ns/m;Nsm/rad) = 4750
+	PTO Damping           (Ns/m;Nsm/rad) = 5000
+	PTO Damping           (Ns/m;Nsm/rad) = 5250
+	PTO Damping           (Ns/m;Nsm/rad) = 5500
+	PTO Damping           (Ns/m;Nsm/rad) = 5750
+	PTO Damping           (Ns/m;Nsm/rad) = 6000
+	PTO Damping           (Ns/m;Nsm/rad) = 6250
+	PTO Damping           (Ns/m;Nsm/rad) = 6500
+	PTO Damping           (Ns/m;Nsm/rad) = 6750
+	PTO Damping           (Ns/m;Nsm/rad) = 7000
+	PTO Damping           (Ns/m;Nsm/rad) = 7250
+	PTO Damping           (Ns/m;Nsm/rad) = 7500
+	PTO Damping           (Ns/m;Nsm/rad) = 7750
 	PTO Damping           (Ns/m;Nsm/rad) = 8000
 
 List of Constraint(s): Number of Constraints = 1 
@@ -37,9 +64,223 @@ List of Constraint(s): Number of Constraints = 1
 
 
 Simulating the WEC device defined in the SimMechanics model VAPEC.slx...   
-Elapsed time is 132.563028 seconds.
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', '\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\source\wecSim.m',291,0)">line 291</a>)
+Error evaluating <a href="matlab:Simulink.internal.OpenCallbackParamsDialog(['VAPEC/MoorDyn/MoorDyn/MoorDyn'],'InitFcn');">'InitFcn'</a> callback of SubSystem block '<a href="matlab:open_and_hilite_hyperlink ('VAPEC/MoorDyn/MoorDyn/MoorDyn','error')">VAPEC/MoorDyn/MoorDyn/MoorDyn</a>'.
+Callback string is '% Initialize MoorDyn Lib (Windows:dll or OSX:dylib)
+if ismac
+    loadlibrary('Lines.dylib','MoorDyn.h');
+elseif ispc
+    loadlibrary('Lines.dll','MoorDyn.h');
+elseif isunix
+  loadlibrary('Lines.so','MoorDyn.h');
+else
+  disp('Cannot run MoorDyn in this platform');
+end
+calllib('Lines','LinesInit', mooring.loc ,[0 0 0 0 0 0]);'
+Caused by:
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', '\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\source\wecSim.m',291,0)">line 291</a>)
+    No supported compiler was found. You can install the freely available MinGW-w64 C/C++ compiler; see <a href="matlab: helpview([docroot '/matlab/helptargets.map'],'install_mingw')">Install MinGW-w64 Compiler</a>. For more options,
+    visit <a href="https://www.mathworks.com/support/compilers">https://www.mathworks.com/support/compilers</a>.
+} 
+helpview([docroot '/matlab/helptargets.map'],'install_mingw')
+uiopen('\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\NEMOH_files\Testing_Script_Cylinder.m',1)
+uiopen('\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\NEMOH_files\Example_Cylinder.m',1)
+uiopen('\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\NEMOH_files\Run_Cylinder.m',1)
+Run_Cylinder
 
-Post-processing and saving...   
-Average power output (Watts) over last half of simulation: -4.059730e+03.
-Average velocity of PTO (rad/s) over last half of simulation: 7.123667e-01.
-Elapsed time is 2.469450 seconds.
+ -> Meshing body number 1 
+
+ --> Number of nodes             : 336
+ --> Number of panels (max 2000) : 84 
+
+ Characteristics of the mesh for Nemoh 
+
+ --> Number of nodes : 378
+ --> Number of panels : 154
+ 
+
+ans =
+
+     3
+
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runNemoh', '\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\NEMOH_files\Functions\runNemoh.m', 26)" style="font-weight:bold">runNemoh</a> (<a href="matlab: opentoline('\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\NEMOH_files\Functions\runNemoh.m',26,0)">line 26</a>)
+fprintf('%s',fullfile(nomrep,'ID.dat'));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Run_Cylinder', '\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\NEMOH_files\Run_Cylinder.m', 105)" style="font-weight:bold">Run_Cylinder</a> (<a href="matlab: opentoline('\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\NEMOH_files\Run_Cylinder.m',105,0)">line 105</a>)
+[A,B,Fe,Famp,Fphi,Ainf] = runNemoh(w, dir, depth);
+} 
+Run_Cylinder
+A subdirectory or file Cylinder_24_07_2020 already exists. 
+A subdirectory or file Cylinder_24_07_2020\mesh already exists. 
+A subdirectory or file Cylinder_24_07_2020\results already exists. 
+
+ -> Meshing body number 1 
+
+ --> Number of nodes             : 336
+ --> Number of panels (max 2000) : 84 
+
+ Characteristics of the mesh for Nemoh 
+
+ --> Number of nodes : 378
+ --> Number of panels : 154
+ 
+
+ans =
+
+     3
+
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runNemoh', '\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\NEMOH_files\Functions\runNemoh.m', 26)" style="font-weight:bold">runNemoh</a> (<a href="matlab: opentoline('\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\NEMOH_files\Functions\runNemoh.m',26,0)">line 26</a>)
+fprintf('%s',fullfile(nomrep,'ID.dat'));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Run_Cylinder', '\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\NEMOH_files\Run_Cylinder.m', 105)" style="font-weight:bold">Run_Cylinder</a> (<a href="matlab: opentoline('\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\NEMOH_files\Run_Cylinder.m',105,0)">line 105</a>)
+[A,B,Fe,Famp,Fphi,Ainf] = runNemoh(w, dir, depth);
+} 
+opentoline('\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\NEMOH_files\Functions\runNemoh.m',26,0)
+opentoline('\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\NEMOH_files\Run_Cylinder.m',105,0)
+opentoline('\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\NEMOH_files\Functions\runNemoh.m',26,0)
+uiopen('\\files.auckland.ac.nz\myhome\Documents\GitRepos\WEC-Sim\WecSim-FYP\NEMOH_files\Example_Cylinder.m',1)
+uiopen('\\files.auckland.ac.nz\myhome\Documents\GitRepos\WEC-Sim\WecSim-FYP\NEMOH_files\Testing_Script_Cylinder.m',1)
+Testing_Script_Cylinder
+
+ -> Meshing body number 1 
+
+ --> Number of nodes             : 1680
+ --> Number of panels (max 2000) : 420 
+
+ Characteristics of the mesh for Nemoh 
+
+ --> Number of nodes : 1680
+ --> Number of panels : 420
+ 
+
+ans =
+
+     3
+
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runNemoh', '\\files.auckland.ac.nz\myhome\Documents\GitRepos\WEC-Sim\WecSim-FYP\NEMOH_files\Functions\runNemoh.m', 26)" style="font-weight:bold">runNemoh</a> (<a href="matlab: opentoline('\\files.auckland.ac.nz\myhome\Documents\GitRepos\WEC-Sim\WecSim-FYP\NEMOH_files\Functions\runNemoh.m',26,0)">line 26</a>)
+fprintf('%s',fullfile(nomrep,'ID.dat'));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Testing_Script_Cylinder', '\\files.auckland.ac.nz\myhome\Documents\GitRepos\WEC-Sim\WecSim-FYP\NEMOH_files\Testing_Script_Cylinder.m', 105)" style="font-weight:bold">Testing_Script_Cylinder</a> (<a href="matlab: opentoline('\\files.auckland.ac.nz\myhome\Documents\GitRepos\WEC-Sim\WecSim-FYP\NEMOH_files\Testing_Script_Cylinder.m',105,0)">line 105</a>)
+[A,B,Fe,Famp,Fphi,Ainf] = runNemoh(w, dir, depth);
+} 
+uiopen('\\files.auckland.ac.nz\myhome\Documents\GitRepos\WEC-Sim\WecSim-FYP\NEMOH_files\Example_Cylinder.m',1)
+Example_Cylinder
+A subdirectory or file Cylinder_24_07_2020 already exists. 
+A subdirectory or file Cylinder_24_07_2020\mesh already exists. 
+A subdirectory or file Cylinder_24_07_2020\results already exists. 
+
+ -> Meshing body number 1 
+
+ --> Number of nodes             : 336
+ --> Number of panels (max 2000) : 84 
+
+ Characteristics of the mesh for Nemoh 
+
+ --> Number of nodes : 378
+ --> Number of panels : 154
+ 
+
+ans =
+
+     3
+
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runNemoh', '\\files.auckland.ac.nz\myhome\Documents\GitRepos\WEC-Sim\WecSim-FYP\NEMOH_files\Functions\runNemoh.m', 26)" style="font-weight:bold">runNemoh</a> (<a href="matlab: opentoline('\\files.auckland.ac.nz\myhome\Documents\GitRepos\WEC-Sim\WecSim-FYP\NEMOH_files\Functions\runNemoh.m',26,0)">line 26</a>)
+fprintf('%s',fullfile(nomrep,'ID.dat'));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Example_Cylinder', '\\files.auckland.ac.nz\myhome\Documents\GitRepos\WEC-Sim\WecSim-FYP\NEMOH_files\Example_Cylinder.m', 105)" style="font-weight:bold">Example_Cylinder</a> (<a href="matlab: opentoline('\\files.auckland.ac.nz\myhome\Documents\GitRepos\WEC-Sim\WecSim-FYP\NEMOH_files\Example_Cylinder.m',105,0)">line 105</a>)
+[A,B,Fe,Famp,Fphi,Ainf] = runNemoh(w, dir, depth);
+} 
+uiopen('\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\VAPEC\hydroData\NEMOH_files\Testing_Script_Cylinder.m',1)
+Testing_Script_Cylinder
+
+ -> Meshing body number 1 
+
+ --> Number of nodes             : 4800
+ --> Number of panels (max 2000) : 1200 
+
+ Characteristics of the mesh for Nemoh 
+
+ --> Number of nodes : 3040
+ --> Number of panels : 760
+ 
+
+ans =
+
+     3
+
+
+------ Starting NEMOH ----------- 
+   
+  Summary of calculation 
+   
+  ->  Water depth =   50.00 m 
+  ->   50 wave frequencies from  0.3100 to  5.0000 
+  ->    1 wave directions from   0.0000 to  0.0000 
+  ->    6 radiation problems 
+  ->    6 forces 
+   
+------ Solving BVPs ------------- 
+   
+  -> Initialisation . . Done ! 
+   
+  -> Solve BVPs and calculate forces  
+   
+ Problem     1 /   350 . . Done ! 
+ Problem     2 /   350 . . Done ! 
+ Problem     3 /   350 . . Done ! 
+ Problem     4 /   350 . . Done ! 
+ Problem     5 /   350 . . Done ! 
+ Problem     6 /   350 . . Done ! 
+ Problem     7 /   350 . . Done ! 
+ Problem     8 /   350 . . Done ! 
+ Problem     9 /   350 . . Done ! 
+ Problem    10 /   350 . . Done ! 
+ Problem    11 /   350 . . Done ! 
+ Problem    12 /   350 . . Done ! 
+ Problem    13 /   350 . . Done ! 
+ Problem    14 /   350 . . Done ! 
+ Problem    15 /   350 . . Done ! 
+ Problem    16 /   350 . . Done ! 
+ Problem    17 /   350 . . Done ! 
+ Problem    18 /   350 . . Done ! 
+ Problem    19 /   350 . . Done ! 
+ Problem    20 /   350 . . Done ! 
+ Problem    21 /   350 . . Done ! 
+ Problem    22 /   350 . . Done ! 
+ Problem    23 /   350 . . Done ! 
+ Problem    24 /   350 . . Done ! 
+ Problem    25 /   350 . . Done ! 
+ Problem    26 /   350 . . Done ! 
+ Problem    27 /   350 . . Done ! 
+ Problem    28 /   350 . . Done ! 
+ Problem    29 /   350 . . Done ! 
+ Problem    30 /   350 . . Done ! 
+ Problem    31 /   350 . . Done ! 
+ Problem    32 /   350 . . Done ! 
+ Problem    33 /   350 . . Done ! 
+ Problem    34 /   350 . . Done ! 
+ Problem    35 /   350 . . Done ! 
+ Problem    36 /   350 . . Done ! 
+ Problem    37 /   350 . . Done ! 
+ Problem    38 /   350 . . Done ! 
+ Problem    39 /   350 . . Done ! 
+ Problem    40 /   350 . . Done ! 
+ Problem    41 /   350 . . Done ! 
+ Problem    42 /   350 . . Done ! 
+ Problem    43 /   350 .{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dos', 'C:\Program Files\Matlab\R2019b\toolbox\matlab\general\dos.m', 67)" style="font-weight:bold">dos</a> (<a href="matlab: opentoline('C:\Program Files\Matlab\R2019b\toolbox\matlab\general\dos.m',67,0)">line 67</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runNemoh', '\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\VAPEC\hydroData\NEMOH_files\Functions\runNemoh.m', 90)" style="font-weight:bold">runNemoh</a> (<a href="matlab: opentoline('\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\VAPEC\hydroData\NEMOH_files\Functions\runNemoh.m',90,0)">line 90</a>)
+    system('.\Nemoh\Solver.exe');
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Testing_Script_Cylinder', '\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\VAPEC\hydroData\NEMOH_files\Testing_Script_Cylinder.m', 106)" style="font-weight:bold">Testing_Script_Cylinder</a> (<a href="matlab: opentoline('\\files.auckland.ac.nz\myhome\Documents\GitRepos\FYP-FULLPROJECT\WecSim-FYP\VAPEC\hydroData\NEMOH_files\Testing_Script_Cylinder.m',106,0)">line 106</a>)
+[A,B,Fe,Famp,Fphi,Ainf] = runNemoh(w, dir, depth);
+} 

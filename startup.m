@@ -8,5 +8,5 @@
 % wecSimPath = '<wecSim Source folder Path>';
 % addpath(genpath(wecSimPath));
 
-addpath(fullfile(pwd,source));
+addpath(genpath(fullfile(pwd,'source')));
 
